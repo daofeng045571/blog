@@ -26,7 +26,7 @@ public class UnitTest {
     private JdbcTemplate jdbcTemplate = null;
     @Before
     public void init() {
-        context = new ClassPathXmlApplicationContext("spring-context.xml");
+        context = new ClassPathXmlApplicationContext("/spring-context.xml");
         jdbcTemplate = context.getBean(JdbcTemplate.class);
     }
     
